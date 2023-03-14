@@ -4,14 +4,16 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
     grid: true,
     line: true,
     nice: true,
+    height: 400,
+    width: 1000,
     color:{
       legend:true,
     },
     marks: [
       Plot.dot(data, {
-        x: 'mision_hs',
-        y: 'eva_mision_hs',
-        fill:"nacionalidad"
+        x: 'anio_nacimiento',
+        y: 'anio_mision',
+        fill: 'genero',
         
       }),
     ],
