@@ -4,8 +4,6 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
       grid: true,
       line: true,
       nice: true,
-      height: 400,
-      width: 700,
       marks: [
 
         Plot.dot(data, {

@@ -15,7 +15,7 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
     marks: [
       Plot.barY(data, {
         x: 'genero',
-        y: 'eva_mision_hs',
+        y: 'mision_hs',
         
       }),
     ],
