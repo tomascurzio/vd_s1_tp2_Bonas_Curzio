@@ -4,18 +4,22 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
     grid: true,
     line: true,
     nice: true,
-    height: 400,
-    width: 1000,
     color:{
       legend:true,
     },
     marks: [
-      Plot.dot(data, {
-        x: 'anio_nacimiento',
-        y: 'anio_mision',
-        fill: 'genero',
-        
-      }),
+      Plot.barY(
+        data, 
+        Plot.groupX(
+          {y:"count"},
+          {
+            x:"nacionalidad",
+            sort:{x:"y",reverse:true},
+
+          }
+        )
+      )
+      ,
     ],
   })
   d3.select('#vis').append(() => chart)

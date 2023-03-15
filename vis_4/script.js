@@ -2,35 +2,35 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
   console.log(data)
   let chart = Plot.plot({
     marks: [
-      Plot.dot(data, {
-        x: 'edad_mision',
-        y: 'anio_mision',
-        fill: 'genero',
-        fillOpacity: 0.7,
-        r: 'mision_hs',
+      Plot.barX(data, {
+        x: 'mision_hs',
+        y: 'ocupacion',
+        fill: '#539165',
+        stroke: '#539165',
       }),
     ],
     grid: true,
     line: true,
     nice: true,
-    width: 900,
+    width: 940,
+    height: 250,
     insetBottom: 20,
     insetTop: 20,
+    insetLeft: 1,
     marginBottom: 40,
     marginTop: 20,
-    marginLeft: 50,
-    marginRight: 25,
+    marginLeft: 230,
+    marginRight: 40,
     color:{
       legend:true,
-      scheme: 'buylrd',
     },
     x: {
-      label: 'Año de nacimiento',
-      labelOffset: 33,
+      label: 'Horas de mision',
+      labelOffset: 40,
     },
     y: {
-      label: 'Año de mision',
-      labelOffset: 50,
+      label: 'Ocupacion',
+      labelOffset: 228,
     },
     style: {
       fontFamily: 'sans-serif',
@@ -39,6 +39,9 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
       background: '#2c2e2d',
       padding: '10px'
     }
+
   })
   d3.select('#vis').append(() => chart)
 })
+
+  
