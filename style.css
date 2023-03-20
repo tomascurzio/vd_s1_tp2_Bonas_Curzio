@@ -1,3 +1,7 @@
-iframe {
-    border: none;
-  }
+.contenedor {
+  background: #2c2e2d;
+  padding-top: 50px;
+  color: #e4ebe7;
+  padding: 10px;
+  font-family: '${fontName}', sans-serif;
+}
