@@ -2,14 +2,14 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
   console.log(data)
   let chart = Plot.plot({
     marks: [
-      Plot.barY(
+      Plot.barX(
         data, 
-        Plot.groupX(
-          {y:"sum"},
+        Plot.groupY(
+          {x:"sum"},
           {
-            x:"nacionalidad",
-            sort:{x:"y",reverse:true},
-            fill: 'genero'
+            y:"nacionalidad",
+            sort:{y:"x",reverse:true},
+            fill: 'genero',
           }
         )
       )
@@ -17,24 +17,27 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
     ],
     color: {
       range: ['#408E91', '#E49393'],
+      legend: true,
     },
     grid: true,
     line: true,
     nice: true,
-    width: 1300,
+    width: 1000,
     height: 800,
     insetBottom: 10,
+    insetLeft: 5,
     marginBottom: 45,
     marginTop: 33,
-    marginLeft: 50,
+    marginLeft: 150,
     marginRight: 25,
     x: {
-      label: 'Nacionalidad',
+      label: 'Cantidad de astronautas',
       labelOffset: 45,
     },
     y: {
-      label: 'Cantidad de astronautas',
-      labelOffset: 50,
+      label: 'Nacionalidad',
+      labelOffset: 150,
+      labelTickRotate: 45,
     },
     style: {
       fontFamily: 'sans-serif',

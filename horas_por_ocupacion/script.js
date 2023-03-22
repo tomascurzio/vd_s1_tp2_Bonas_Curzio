@@ -17,6 +17,7 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
     insetBottom: 20,
     insetTop: 20,
     insetLeft: 5,
+    insetRight: 10,
     marginBottom: 80,
     marginTop: 20,
     marginLeft: 260,
@@ -30,7 +31,7 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
     },
     y: {
       label: 'Ocupacion',
-      labelOffset: 260,
+      labelOffset: 255,
     },
     style: {
       fontFamily: 'sans-serif',
