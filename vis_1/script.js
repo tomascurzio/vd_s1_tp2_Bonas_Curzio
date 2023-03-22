@@ -9,12 +9,15 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
           {
             x:"nacionalidad",
             sort:{x:"y",reverse:true},
-            fill: '#E49393'
+            fill: 'genero'
           }
         )
       )
       ,
     ],
+    color: {
+      range: ['#408E91', '#E49393'],
+    },
     grid: true,
     line: true,
     nice: true,
