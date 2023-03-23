@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+* {
+  color: #e4ebe7;
+  font-family: 'Poppins', sans-serif;
+}
 
 body{
   background: #2c2e2d;
@@ -12,6 +18,64 @@ body{
 }
 
 h1 {
-  font-size: 40px;
+  padding-top: 20px;
   text-align: center;
+  font-size: 32px;
+  position: relative;
+}
+
+h1:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  background: #E49393;
+  width: 210px;
+  height: 2px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transform: translateY(7px);
+}
+
+h2 {
+  font-weight: medium;
+  letter-spacing: 0.5px;
+  font-size: 20px;
+}
+
+p {
+  font-size: 15px;
+}
+
+.circle {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 50px;
+  font-size: 16px;
+  margin-right: 7px;
+}
+
+.male {
+  background-color: #E49393;
+  color: #e4ebe7;
+}
+
+.female {
+  background-color: #408E91;
+  color: #e4ebe7;
+}
+
+.gender-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+}
+
+.primergrafico {
+  background: blue;
 }

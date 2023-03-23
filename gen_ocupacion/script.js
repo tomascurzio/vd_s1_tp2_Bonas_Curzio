@@ -19,6 +19,7 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
     line: true,
     nice: true,
     width: 1100,
+    height: 500,
     insetBottom: 10,
     marginBottom: 50,
     marginTop: 50,
@@ -27,7 +28,7 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
     facet: {
       data: data,
       x: 'ocupacion',
-      label: 'Ocupacion',
+      label: 'Ocupación',
     },
     color:{
       legend:true,
@@ -41,11 +42,10 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
       labelOffset: 50,
     },
     style: {
-      fontFamily: 'sans-serif',
       fontSize: 16,
       color: '#e4ebe7',
       background: '#2c2e2d',
-      padding: '10px'
+      padding: '10px',
     },
   })
   d3.select('#vis').append(() => chart)

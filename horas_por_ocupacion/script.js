@@ -34,7 +34,6 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
       labelOffset: 255,
     },
     style: {
-      fontFamily: 'sans-serif',
       fontSize: 16,
       color: '#e4ebe7',
       background: '#2c2e2d',
