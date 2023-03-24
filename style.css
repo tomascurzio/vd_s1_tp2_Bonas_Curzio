@@ -12,9 +12,9 @@ body{
 
 .contenedor {
   padding-top: 50px;
-  color: #e4ebe7;
   padding: 10px;
-  font-family: 'Poppins', sans-serif;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 h1 {
