@@ -13,6 +13,7 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
             x: 'edad_mision',
             y: 'nacionalidad',
             fill: '#E49393',
+
           },
         ),
       ),
