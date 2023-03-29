@@ -16,31 +16,30 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
       ,
     ],
     color: {
-      range: ['#408E91', '#E49393'],
+      range: ['#8AA399', '#B4656F'],
     },
     grid: true,
     line: true,
     nice: true,
     width: 1200,
     height: 630,
-    insetBottom: 10,
     insetLeft: 5,
     marginBottom: 50,
     marginTop: 0,
-    marginLeft: 140,
+    marginLeft: 73,
     x: {
       label: 'Cantidad de astronautas',
-      labelOffset: 45,
+      labelOffset: 35,
     },
     y: {
-      label: 'Nacionalidad',
-      labelOffset: 140,
+      label: '',
     },
     style: {
       fontSize: 16,
       color: '#e4ebe7',
       background: '#2c2e2d',
-      padding: '10px'
+      padding: '10px',
+      fontFamily: 'Poppins',
     },
   })
   d3.select('#vis').append(() => chart)

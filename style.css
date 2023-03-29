@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
 
 * {
   color: #e4ebe7;
@@ -13,38 +12,47 @@ body{
 .contenedor {
   padding-top: 50px;
   padding: 10px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 200px;
+  margin-right: 200px;
 }
 
-h1 {
-  padding-top: 20px;
-  text-align: center;
-  font-size: 32px;
-  position: relative;
-}
-
-h1:after {
+/* h2:after {
   content: '';
   position: absolute;
   bottom: 0;
   background: #E49393;
-  width: 210px;
+  width: 200px;
   height: 2px;
   left: 0;
   right: 0;
   margin: 0 auto;
-  transform: translateY(7px);
+  transform: translateY(10px);
+} */
+
+br {
+  display: block; 
+  content: "";
+  margin-top: 20px;
+}
+
+span {
+  margin-left: 6px;
+  margin-right: 6px;
 }
 
 h2 {
+  position: relative;
   font-weight: medium;
   letter-spacing: 0.5px;
-  font-size: 20px;
+  font-size: 23px;
+  display: flex;
+  justify-content: center;
 }
 
 p {
   font-size: 15px;
+  display: flex;
+  justify-content: center;
 }
 
 .circle {
@@ -60,12 +68,12 @@ p {
 }
 
 .male {
-  background-color: #E49393;
+  background-color: #B4656F;
   color: #e4ebe7;
 }
 
 .female {
-  background-color: #408E91;
+  background-color: #8AA399;
   color: #e4ebe7;
 }
 
@@ -76,6 +84,8 @@ p {
   font-size: 15px;
 }
 
-.primergrafico {
-  background: blue;
+.spacing {
+  display: block; 
+  content: "";
+  margin-top: 200px;
 }

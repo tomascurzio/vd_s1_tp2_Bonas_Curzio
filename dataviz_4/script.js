@@ -34,7 +34,7 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
           x: 'anio_mision', 
           y: d => d.max,
           sort: 'anio_mision',
-          stroke: '#E49393',
+          stroke: '#B4656F',
           strokeWidth: 4,
         }),
       Plot.lineY(sumarusia,
@@ -42,7 +42,7 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
           x: 'anio_mision', 
           y: d => d.max,
           sort: 'anio_mision',
-          stroke: '#408E91',
+          stroke: '#8AA399',
           strokeWidth: 4,
         }),
     ],
@@ -54,21 +54,23 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
     insetBottom: 10,
     insetRight: 10,
     insetLeft: 10,
-    marginTop: 40,
+    marginTop: 4,
     marginBottom: 45,
     marginLeft: 60,
-    marginRight: 25,
+    marginRight: 4,
     x: {
         label: 'Año',
+        tickFormat: 'd',
       },
     y: {
-      label: 'Horas totales',
+      label: '',
     },
     style: {
       fontSize: 16,
       color: '#e4ebe7',
       background: '#2c2e2d',
-      padding: '10px' 
+      padding: '10px',
+      fontFamily: 'Poppins',
     }, 
   })
   d3.select('#chart').append(() => chart)

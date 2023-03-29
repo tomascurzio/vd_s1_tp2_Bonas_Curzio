@@ -12,8 +12,7 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
           {
             x: 'edad_mision',
             y: 'nacionalidad',
-            fill: '#E49393',
-
+            fill: '#E0E0CE',
           },
         ),
       ),
@@ -32,13 +31,14 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
     insetBottom: 10,
     insetRight: 10,
     marginBottom: 45,
-    marginLeft: 140,
+    marginLeft: 100,
     marginRight: 25,
     style: {
       fontSize: 16,
       color: '#e4ebe7',
       background: '#2c2e2d',
-      padding: '10px' 
+      padding: '10px',
+      fontFamily: 'Poppins',
     }, 
   })
   d3.select('#vis').append(() => chart)
