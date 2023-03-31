@@ -5,7 +5,7 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
       Plot.barX(
         data, 
         Plot.groupY(
-          {x:"sum"},
+          {x:"count"},
           {
             y:"nacionalidad",
             sort:{y:"x",reverse:true},
@@ -21,21 +21,21 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
     grid: true,
     line: true,
     nice: true,
-    width: 1200,
-    height: 630,
+    width: 1000,
+    height: 500,
     insetLeft: 5,
-    marginBottom: 50,
+    marginBottom: 60,
     marginTop: 0,
-    marginLeft: 73,
+    marginLeft: 120,
     x: {
       label: 'Cantidad de astronautas',
-      labelOffset: 35,
+      labelOffset: 40,
     },
     y: {
       label: '',
     },
     style: {
-      fontSize: 16,
+      fontSize: 14,
       color: '#e4ebe7',
       background: '#2c2e2d',
       padding: '10px',
