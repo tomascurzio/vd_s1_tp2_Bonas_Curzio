@@ -3,9 +3,6 @@
 * {
   color: #e4ebe7;
   font-family: 'Poppins', sans-serif;
-}
-
-body{
   background: #2c2e2d;
 }
 
@@ -16,23 +13,17 @@ body{
   margin-right: 8%;
 }
 
-/* h2:after {
+h1:after {
   content: '';
   position: absolute;
   bottom: 0;
   background: #E49393;
-  width: 200px;
-  height: 2px;
+  width: 500px;
+  height: 3px;
   left: 0;
   right: 0;
   margin: 0 auto;
   transform: translateY(10px);
-} */
-
-br {
-  display: block; 
-  content: "";
-  margin-top: 20px;
 }
 
 span {
@@ -47,6 +38,23 @@ h2 {
   font-size: 21px;
   display: flex;
   justify-content: center;
+}
+
+h1 {
+  position: relative;
+  font-weight: medium;
+  letter-spacing: 0.5px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-weight: medium;
+  letter-spacing: 0.8px;
+  font-size: 18px;
+  margin-bottom: 0;
 }
 
 p {
@@ -84,8 +92,6 @@ p {
   font-size: 15px;
 }
 
-.spacing {
-  display: block; 
-  content: "";
-  margin-top: 200px;
+a {
+  margin-left: 3.5px;
 }

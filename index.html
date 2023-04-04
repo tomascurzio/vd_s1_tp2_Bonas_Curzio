@@ -5,35 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-    <title>Astronautas!</title>
+    <title>Astronautas</title>
 
-    <link rel="icon" href="/astronaut3.png">
-
+    <link rel="icon" type="image/png" href="astronaut.png" />
     <link rel="stylesheet" href="style.css" />
+
+    <script>
+      var distribucionEdades = document.getElementById("showorhide");
+      var contenidoDistribucionEdades = document.getElementById("show");
+    
+      distribucionEdades.addEventListener("click", function() {
+        if (contenidoDistribucionEdades.style.display === "none") {
+          contenidoDistribucionEdades.style.display = "block";
+        } else {
+          contenidoDistribucionEdades.style.display = "none";
+        }
+      });
+    </script>
+
   </head>
   
   <body>
 
     <div class="contenedor">
 
-      <h2>Cantidad de astronautas por nacionalidad y género</h2>
-      <p>El gráfico nos permite observar la clara ventaja de los Estados Unidos y Rusia en cuanto a la exploracion espacial, 
-        teniendo muchisimos más astronautas que fueron al espacio que los demás paises. Además, nos permite observar como casi
-        todos los datos pertenecen a astronautas hombres, mostrando la minoría de las mujeres en la industria.
-      </p>
-      <div class="gender-container">
-        <div class="circle female"></div>
-        <div>Femenino</div>
-        <div style="width: 20px;"></div>
-        <div class="circle male"></div>
-        <div>Masculino</div>
+      <h1>Graficando el espacio con astronautas de la ultima década</h1>
+      <br>
+      <p>En los siguientes gráficos, analizaremos diversos datos acerca de las misiones que los diferentes paises 
+        hicieron al espacio en los últimos 10 años. Se analizaran variables como las horas de misión, el genero de
+        los astronautas, o las ocupación de los mismos. Los datos utilizados fueron recopilados por la NASA (Estados Unidos),
+         Roscomos (Rusia) y los respectivos sitios de cada país. El análisis y los gráficos fueron realizados por Valentín Bonás y Tomás Curzio.</p>
+      <br>
+
+      <h2 id="showorhide">¿De donde son los astronautas?</h2>
+
+      <div id="show">
+
+        <p>El gráfico nos permite observar la clara ventaja de los Estados Unidos y Rusia en cuanto a la exploracion espacial, 
+          teniendo muchisimos más astronautas que fueron al espacio que los demás paises. Además, nos permite observar como casi
+          todos los datos pertenecen a astronautas hombres, mostrando la minoría de las mujeres en la industria.
+        </p>
+        <div class="gender-container">
+          <div class="circle female"></div>
+          <div>Femenino</div>
+          <div style="width: 20px;"></div>
+          <div class="circle male"></div>
+          <div>Masculino</div>
+        </div>
+
+        <iframe width="100%" height="590" frameborder="0" src="dataviz_1/index.html"></iframe>
+      
       </div>
 
-      <iframe width="100%" height="630" frameborder="0" src="dataviz_1/index.html"></iframe>
+      <h2>Distribución de edades</h2>
 
-      <h2>Edad por nacionalidad</h2>
+      <p>Relacionando este gráfico con el anterior, podemos ver como a medida que aumenta la cantidad de astronautas
+        por país, aumenta el rango horario, esto implica si bien todos se encuentran en un rango de entre 30 y 60 años 
+        por las aptitudes física, no hay alguna preferencia especifica dentro del rubro.
+      </p>
 
-      <iframe width="100%" height="630" frameborder="0" src="dataviz_2/index.html"></iframe>
+      <iframe width="100%" height="600" frameborder="0" src="dataviz_2/index.html"></iframe>
 
       <h2>Horas totales de misión: <span style = "color:#B4656F">EE.UU.</span> vs <span style = "color:#8AA399">Rusia</span></h2>
 
@@ -42,9 +73,10 @@
         en 2016, tanto para EE.UU. como para Rusia, hubo un pico en las horas de misión.
       </p>
 
-      <iframe width="100%" height="630" frameborder="0" src="dataviz_4/index.html"></iframe>
+      <iframe width="100%" height="600" frameborder="0" src="dataviz_4/index.html"></iframe>
 
-      <h2>Astronautas por ocupación y género</h2>
+      <h2>¿Cómo distribuyen los trabajos los astronautas?</h2>
+      <p></p>
 
       <div class="gender-container">
         <div class="circle female"></div>
@@ -54,7 +86,20 @@
         <div>Masculino</div>
       </div>
 
-      <iframe width="100%" height="600" frameborder="0" src="dataviz_3/index.html"></iframe>
+      <iframe width="100%" height="550" frameborder="0" src="dataviz_3/index.html"></iframe>
+
+      <h2>¿Que ocupación tiene más horas de misión?</h2>
+      <p></p>
+
+      <div class="gender-container">
+        <div class="circle female"></div>
+        <div>Ingenieros</div>
+        <div style="width: 20px;"></div>
+        <div class="circle male"></div>
+        <div>Comandantes</div>
+      </div>
+
+      <iframe width="100%" height="550" frameborder="0" src="dataviz_5/index.html"></iframe>
     
     </div>
 
