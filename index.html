@@ -10,19 +10,6 @@
     <link rel="icon" type="image/png" href="astronaut.png" />
     <link rel="stylesheet" href="style.css" />
 
-    <script>
-      var distribucionEdades = document.getElementById("showorhide");
-      var contenidoDistribucionEdades = document.getElementById("show");
-    
-      distribucionEdades.addEventListener("click", function() {
-        if (contenidoDistribucionEdades.style.display === "none") {
-          contenidoDistribucionEdades.style.display = "block";
-        } else {
-          contenidoDistribucionEdades.style.display = "none";
-        }
-      });
-    </script>
-
   </head>
   
   <body>
@@ -30,16 +17,19 @@
     <div class="contenedor">
 
       <h1>Graficando el espacio con astronautas de la ultima década</h1>
-      <br>
-      <p>En los siguientes gráficos, analizaremos diversos datos acerca de las misiones que los diferentes paises 
-        hicieron al espacio en los últimos 10 años. Se analizaran variables como las horas de misión, el genero de
-        los astronautas, o las ocupación de los mismos. Los datos utilizados fueron recopilados por la NASA (Estados Unidos),
-         Roscomos (Rusia) y los respectivos sitios de cada país. El análisis y los gráficos fueron realizados por Valentín Bonás y Tomás Curzio.</p>
-      <br>
+      
+      <div style="display: block; height: 18px;"></div>
 
-      <h2 id="showorhide">¿De donde son los astronautas?</h2>
+      <div id="texto">
+        <p>En los siguientes gráficos, analizaremos diversos datos acerca de las misiones que los diferentes paises 
+          hicieron al espacio en los últimos 10 años. Se analizaran variables como las horas de misión, el genero de
+          los astronautas, o las ocupación de los mismos. Los datos utilizados fueron recopilados por la NASA (Estados Unidos),
+          Roscomos (Rusia) y los respectivos sitios de cada país. El análisis y los gráficos fueron realizados por Valentín Bonás y Tomás Curzio.</p>
+      </div>
 
-      <div id="show">
+      <div style="display: block; height: 10px;"></div>
+
+      <h2>¿De dónde son los astronautas?</h2>
 
         <p>El gráfico nos permite observar la clara ventaja de los Estados Unidos y Rusia en cuanto a la exploracion espacial, 
           teniendo muchisimos más astronautas que fueron al espacio que los demás paises. Además, nos permite observar como casi
@@ -53,9 +43,7 @@
           <div>Masculino</div>
         </div>
 
-        <iframe width="100%" height="590" frameborder="0" src="dataviz_1/index.html"></iframe>
-      
-      </div>
+        <iframe width="100%" height="560" frameborder="0" src="dataviz_1/index.html"></iframe>
 
       <h2>Distribución de edades</h2>
 
@@ -76,7 +64,13 @@
       <iframe width="100%" height="600" frameborder="0" src="dataviz_4/index.html"></iframe>
 
       <h2>¿Cómo distribuyen los trabajos los astronautas?</h2>
-      <p></p>
+      <p>Podemos observar cómo la mayoría de los astronautas se concentran en dos ocupaciones: los comandantes y los
+        ingenieros aeroespaciales, dejando a otras profesiones como los pilotos y los participantes de vuelo espacial
+        con tan solo 9 entre ambos. Además, vemos cómo en la industria no se da lugar a mujeres comandantes, ya que a 
+        pesar de ser la segunda ocupación con más astronautas, ninguno de ellos es una mujer.
+      </p>
+
+      <div style="display: block; height: 15px;"></div>
 
       <div class="gender-container">
         <div class="circle female"></div>
@@ -86,24 +80,8 @@
         <div>Masculino</div>
       </div>
 
-      <iframe width="100%" height="590" frameborder="0" src="dataviz_3/index.html"></iframe>
+      <iframe width="100%" height="490" frameborder="0" src="dataviz_3/index.html"></iframe>
 
-      <h2>¿Que ocupación tiene más horas de misión?</h2>
-      <p>Comparando las dos ocupaciones con mayor cantidad de astronautas, podemos darnos cuenta que en casi todos
-        los años menos en 2011, los ingenieros tienen una mayor cantidad de horas de misión que los comandantes. Además,
-        relacionandolo con el gráfico anterior
-      </p>
-
-      <div class="gender-container">
-        <div class="circle female"></div>
-        <div>Comandantes</div>
-        <div style="width: 20px;"></div>
-        <div class="circle male"></div>
-        <div>Ingenieros</div>
-      </div>
-
-      <iframe width="100%" height="550" frameborder="0" src="dataviz_5/index.html"></iframe>
-    
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.2/iframeResizer.min.js"></script>
