@@ -44,7 +44,7 @@ h1 {
   position: relative;
   font-weight: medium;
   letter-spacing: 0.5px;
-  font-size: 30px;
+  font-size: 28px;
   display: flex;
   justify-content: center;
   margin-bottom: 10px;
@@ -94,4 +94,16 @@ p {
 
 a {
   margin-left: 3.5px;
+}
+
+img {
+  width: 169px;
+  height: 195px;
+  margin-left: 30px;
+  margin-right: 100px;
+  float: right;
+}
+
+.texto {
+  text-align: justify;
 }
