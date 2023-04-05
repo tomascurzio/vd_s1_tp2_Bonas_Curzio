@@ -12,3 +12,6 @@ Utilizamos de marca una linea y el canal es la posicion/altura de la linea. Tien
 Decidimos usar lineas para que se pueda ver graficamente como cambian las horas de año en año y que sea facil comparar entre las dos lineas. Ademas las lineas funcionan muy bien para marcar atributos cuantitativos.
 
 
+Para finalizar, llegamos al ultimo grafico titulado "¿Que ocupación tiene más horas de misión?". Este grafico esta dividido en 5 partes, que representan las 5 ocupaciones que los distintos astronautas tenian. Utilizamos un grafico de barras para mostrar la cantidad de astronautas que ejercen esa ocupacion.En este grafico usamos los dos colores que mencionamos al principio para diferenciar los generos. De esta manera tenemos dos atributos categoricos en genero y ocupacion y uno cuantitativo en la cantidad de astronautas
+
+ A diferencia de los graficos anteriores, este no utiliza una grilla ni tiene los ejes marcados. Esto se debe a que agregamos los numeros a las barras para que se pueda ver claramente la cantidad, por lo que los ejes eran "tinta de mas". Este grafico elejimos el de barras puesto que creemos que para una comparacion de 5 categorias distintas(siendo estas las ocupaciones) y sus respectivas cantidades.
